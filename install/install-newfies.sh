@@ -31,7 +31,7 @@ fi
 #Get Scripts dependencies
 cd /usr/src/
 rm newfies-dialer-functions.sh
-wget --no-check-certificate https://github.com/wlvoipin/newfies-dialer/$BRANCH/install/newfies-dialer-functions.sh -O newfies-dialer-functions.sh
+wget --no-check-certificate https://raw.github.com/gudge25/newfies-dialer/$BRANCH/install/newfies-dialer-functions.sh -O newfies-dialer-functions.sh
 #Include cdr-stats install functions
 source newfies-dialer-functions.sh
 
@@ -56,7 +56,7 @@ show_menu_newfies() {
 func_identify_os
 
 #Request the user to accept the license
-func_accept_license
+##func_accept_license
 
 echo "========================================================================="
 echo ""
